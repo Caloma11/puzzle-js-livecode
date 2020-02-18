@@ -81,5 +81,5 @@ const hasWon = (all) => {
   const tdsArray = Array.from(allTiles); // Creates an array of table data's based on the nodeList defined on line 25
   const numbersArray = tdsArray.map((tableData) => { return Number.parseInt(tableData.innerText, 10) }) // maps that array, so instead of td's, we have inside it only the numbers that represent those td's
   const userOrder = numbersArray.join(); // creates a string from that array, representing the order in which the user arranged the tiles
-  return userOrder == "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,NaN"
+  return userOrder == "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,NaN" // returns true if the user has won, false if not
 }
